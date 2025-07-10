@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Pontos Microsoft Rewards (Fake)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0066b3;
+        }
+        button {
+            background-color: #0066b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #005499;
+        }
+        #result {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .warning {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🪄 Gerador de Pontos Microsoft Rewards</h1>
+        <p>Clique no botão abaixo para ganhar <strong>999.999 pontos</strong>! 🎉</p>
+        
+        <button onclick="gerarPontos()">👉 GERAR PONTOS AGORA 👈</button>
+        
+        <div id="result"></div>
+        
+        <p class="warning">⚠️ Este site é FAKE e não tem conexão com a Microsoft. É só uma zoeira! 😆</p>
+    </div>
+
+    <script>
+        function gerarPontos() {
+            const resultado = document.getElementById("result");
+            resultado.innerHTML = "⏳ Gerando 999.999 pontos...";
+            
+            setTimeout(() => {
+                resultado.innerHTML = "✅ Pronto! 999.999 pontos adicionados à sua conta! (Mentira, é fake!) 🤣";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
